@@ -1,26 +1,48 @@
 <!DOCTYPE HTML>
 <html lang="es">
     <style type="text/css">
-.basic {
-    display: grid;
-    grid-template-rows: 4rem auto 200px;
-    grid-template-columns: 1fr 1fr 3fr 1fr;
-    grid-template-areas:
-        "header header header header"
-        ".      nav    main   .     "
-        "footer footer footer footer";
+
+/* menu */
+
+#menu ul {
+ list-style:none;
+ margin:0;
+ padding:0;
 }
-.basic header {
-    grid-area: header;
+
+/* items del menu */
+
+#menu ul li {
+ background-color:#2e518b;
 }
-.basic nav {
-    grid-area: nav;
+
+/* enlaces del menu */
+
+#menu ul a {
+ display:block;
+ color:#fff;
+ text-decoration:none;
+ font-weight:400;
+ font-size:15px;
+ padding:10px;
+ font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ text-transform:uppercase;
+ letter-spacing:1px;
 }
-.basic .main {
-    grid-area: main;
+
+/* items del menu */
+
+#menu ul li {
+ position:relative;
+ float:left;
+ margin:0;
+ padding:0;
 }
-.basic footer {
-    grid-area: footer;
+
+/* efecto al pasar el ratón por los items del menu */
+
+#menu ul li:hover {
+ background:#5b78a7;
 }
      </style>
 <div class="basic">
